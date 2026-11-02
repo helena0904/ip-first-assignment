@@ -234,7 +234,7 @@ int main() {
   <input type="text" id="fullname" name="fullname" required>
   <br><br>
   <label for="email">Email:</label>
-  <input type="email" id="email" required>
+ <input type="email" id="email" name="email" required>
 </fieldset>
 
 
@@ -286,13 +286,21 @@ int main() {
 <fieldset>
   <legend>Your Message</legend>
 
-<label for="reason">Reason for contacting me:</label> <select id="reason" name="reason"> <option value="internship">Internship offer</option> <option value="freelance">Freelance project</option> <option value="full-time">Full-time job</option> <option value="group-project">Group project</option> <option value="tutoring">Tutoring</option> <option value="other">Other</option> </select>
+<label for="reason">Reason for contacting me:</label> 
+<select id="reason" name="reason" required> 
+  <option value="internship">Internship offer</option>
+   <option value="freelance">Freelance project</option>
+    <option value="full-time">Full-time job</option> 
+    <option value="group-project">Group project</option>
+     <option value="tutoring">Tutoring</option>
+      <option value="other">Other</option> 
+    </select>
 
 <br><br>
 
 <label for="message">Message:</label> <br>
 
-  <textarea id="message" name="message" rows="5" cols="40"></textarea>
+  <textarea id="message" name="message" rows="5" cols="40" required></textarea>
 
 </fieldset>
 
