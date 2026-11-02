@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helen Tesfaye | Portfolio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -20,7 +20,6 @@
       <a href="projects.html">All Projects</a>
     </nav>
   </header>
-  <hr>
 
   <main>
 
@@ -29,16 +28,15 @@
       <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student interested in technology and problem-solving. I enjoy learning and working on projects.</p>
       <p>My current interests are <mark>Backend Development and AI/ML</mark>.</p>
       <p>Programming languages I have used: <strong>Python</strong>, <strong>C++</strong> and <em>JavaScript</em>.</p>
+      <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
     </section>
-    <hr>
 
-    <section id="inspiration">
+    <aside id="inspiration">
       <h2>What Inspires Me</h2>
       <blockquote>&ldquo;Great things are done by a series of small things brought together.&rdquo; &mdash; Vincent van Gogh</blockquote>
       <p>I am inspired by the idea that <q>every expert was once a beginner</q>. It reminds me to keep learning, practicing and improving.</p>
       <p>Movies I recommend: <cite>Inception</cite>, <cite>Interstellar</cite>, <cite>The Pursuit of Happyness</cite></p>
-    </section>
-    <hr>
+    </aside>
 
     <section id="skills">
       <h2>Skills</h2>
@@ -87,7 +85,6 @@
         <dd>Saves versions of my code and shares my projects online.</dd>
       </dl>
     </section>
-    <hr>
 
     <section id="projects">
       <h2>Projects</h2>
@@ -95,25 +92,40 @@
       <article>
         <h3>Restaurant Website</h3>
         <p>A frontend website featuring a home page, menu, gallery, and contact section. Built with <strong>HTML and CSS</strong>.</p>
-        <video controls width="480" preload="metadata">
-          <source src="files/restaurant-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+          <img src="images/restaurant.png" alt="restaurant website" width="600" height="200">
+      
         <p><a href="https://github.com/helena0904/2h-restaurant.git" target="_blank" rel="noopener">View on GitHub</a></p>
       </article>
 
       <article>
         <h3>Asash Tour</h3>
         <p>A tour agency website showcasing Ethiopian travel destinations and tour services. Built with <strong>HTML and CSS</strong>.</p>
-        <video controls width="480" preload="metadata">
-          <source src="files/asash-tour-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        </article>
+      
+        <img src="images/tour.png" alt="asash tour" width="600" height="200">
+ 
+      </article>
+
+      <article>
+        <h3>My First Program</h3>
+        <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>. Later I wrote this loop:</p>
+        <pre><code>for i in range(3):
+    print("Hello", i)
+</code></pre>
+        <p>In C++, the same idea looks like this:</p>
+        <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 0; i &lt; 3; i++) {
+        cout &lt;&lt; "Hello " &lt;&lt; i &lt;&lt; endl;
+    }
+    return 0;
+}
+</code></pre>
+      </article>
 
       <p><a href="projects.html">See all my projects &rarr;</a></p>
     </section>
-    <hr>
 
     <section id="education">
       <h2>Education</h2>
@@ -124,6 +136,8 @@
         <caption>Academic Record &mdash; BSc in Software Engineering</caption>
         <thead>
           <tr>
+            <th>Year</th>
+            <th>Semester</th>
             <th>Course</th>
             <th>Credit Hours</th>
             <th>Grade</th>
@@ -131,16 +145,31 @@
         </thead>
         <tbody>
           <tr>
+            <th rowspan="7">Year 2</th>
+            <td rowspan="4">Semester I</td>
             <td>Applied Mathematics</td>
             <td>4</td>
             <td>A+</td>
           </tr>
           <tr>
+            <!-- Year and Semester are already covered -->
             <td>Discrete Mathematics</td>
             <td>3</td>
             <td>A-</td>
           </tr>
           <tr>
+            <td>Economics</td>
+            <td>3</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td>3</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <!-- Year is still covered -->
+            <td rowspan="3">Semester II</td>
             <td>Database</td>
             <td>4</td>
             <td>B+</td>
@@ -155,27 +184,16 @@
             <td>3</td>
             <td>A-</td>
           </tr>
-          <tr>
-            <td>Economics</td>
-            <td>3</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>History</td>
-            <td>3</td>
-            <td>B+</td>
-          </tr>
         </tbody>
         <tfoot>
           <tr>
-            <th>Total Credit Hours</th>
+            <th colspan="3">Total credit hours</th>
             <th>24</th>
-            <td></td>
+            <th></th>
           </tr>
         </tfoot>
       </table>
     </section>
-    <hr>
 
     <section id="contact">
       <h2>Contact</h2>
@@ -201,13 +219,12 @@
 
   </main>
 
-  <hr>
   <footer>
     <p>&copy; 2026 Helen Tesfaye. All rights reserved.</p>
     <p>
       <a href="#top">Back to top</a> |
       <a href="projects.html">All Projects</a> |
-      <a href="mailto:helentesfaye@gmail.com">Email me</a>
+      <a href="mailto:helentesfaye9421@gmail.com">Email me</a>
     </p>
   </footer>
 
