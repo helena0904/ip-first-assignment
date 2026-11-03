@@ -10,6 +10,9 @@
 <body>
 
   <header id="top">
+    <canvas id="logo" width="120" height="120">
+    Helen Tesfaye logo
+</canvas>
     <h1>Helen Tesfaye</h1>
     <img src="images/photo.jpg" alt="Profile photo of Helen Tesfaye" width="140" height="140">
     <p>software developer aspiring ai/ml engineer</p>
@@ -110,6 +113,10 @@
       <p>Python <meter min="0" max="100" value="70">70%</meter> 70%</p>
       <p>JavaScript <meter min="0" max="100" low="30" high="70" optimum="90" value="20">20%</meter> 20%</p>
       <p>CSS <meter min="0" max="100" value="40">40%</meter> 40%</p>
+    <canvas id="skillChart" width="300" height="150">
+    Skill levels bar chart
+</canvas>
+    
     </section>
 
     <h3>My Learning Roadmap</h3>
@@ -359,6 +366,42 @@ int main() {
       <a href="mailto:helentesfaye9421@gmail.com">Email me</a>
     </p>
   </footer>
+<script>
+    const canvas = document.getElementById("logo");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 0, 120, 120);
+
+    ctx.beginPath();
+    ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    ctx.fillStyle = "blue";
+    ctx.font = "bold 30px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("HT", 60, 60);
+
+    const chart = document.getElementById("skillChart");
+const chartCtx = chart.getContext("2d");
+
+chartCtx.fillStyle = "blue";
+
+chartCtx.fillRect(20, 34, 35, 96);
+chartCtx.fillRect(85, 46, 35, 84);
+chartCtx.fillRect(150, 106, 35, 24);
+chartCtx.fillRect(215, 82, 35, 48);
+
+chartCtx.fillStyle = "black";
+chartCtx.font = "12px Arial";
+
+chartCtx.fillText("HTML", 20, 145);
+chartCtx.fillText("Python", 85, 145);
+chartCtx.fillText("JS", 150, 145);
+chartCtx.fillText("CSS", 215, 145);
+</script>
 
 </body>
 </html>
