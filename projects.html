@@ -9,81 +9,195 @@
 <body>
 
   <header id="top">
-    <h1>All Projects</h1>
-    <nav><a href="index.html">&larr; Back to portfolio</a></nav>
+    <nav><a href="index.html">&larr; Back to Home</a></nav>
+    <h1>My Projects</h1>
+    <p>Details of every project I have built.</p>
   </header>
 
   <main>
 
+    <!-- Summary table -->
+    <table border="1" cellpadding="6" cellspacing="0">
+      <caption>Project Summary</caption>
+      <thead>
+        <tr>
+          <th scope="col">Project</th>
+          <th scope="col">Language</th>
+          <th scope="col">Type</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Movie Search Website</td>
+          <td>JavaScript</td>
+          <td>Team</td>
+          <td><a href="#movie-search">Details</a></td>
+        </tr>
+        <tr>
+          <td>Restaurant Website</td>
+          <td>HTML, CSS</td>
+          <td>Individual</td>
+          <td><a href="#restaurant-website">Details</a></td>
+        </tr>
+        <tr>
+          <td>Asash Tour</td>
+          <td>HTML, CSS</td>
+          <td>Individual</td>
+          <td><a href="#asash-tour">Details</a></td>
+        </tr>
+        <tr>
+          <td>Digital PC Management System</td>
+          <td>C++</td>
+          <td>Team</td>
+          <td><a href="#pc-management">Details</a></td>
+        </tr>
+        <tr>
+          <td>Digitalized Cafeteria System</td>
+          <td>C++</td>
+          <td>Team</td>
+          <td><a href="#cafeteria-system">Details</a></td>
+        </tr>
+        <tr>
+          <td>MEKAKEL</td>
+          <td>TypeScript</td>
+          <td>Individual</td>
+          <td><a href="#mekakel">Details</a></td>
+        </tr>
+        <tr>
+          <td>Mekenet</td>
+          <td>Dart (Flutter)</td>
+          <td>Team</td>
+          <td><a href="#mekenet">Details</a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="3">Total projects</th>
+          <td><strong>7</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- 1 -->
     <article id="movie-search">
-      <h2>1. Movie Search Website</h2>
-      <p>A team-based capstone project developed at Google Developer Groups (GDG). The website allows users to search for movies and explore movie-related information using a publicly available movie API. It provides a simple and user-friendly interface for discovering movies and accessing relevant details. The project was developed using <strong>HTML, CSS, and JavaScript</strong>, with a focus on API integration and dynamic content rendering.</p>
+      <h2>Movie Search Website</h2>
+      <img src="images/movie-search.png" alt="Screenshot of the Movie Search website" width="400">
+      <p>A team-based capstone project developed at Google Developer Groups (GDG). The website allows users to search for movies and explore movie-related information using a publicly available movie API. It provides a simple and user-friendly interface for discovering movies and accessing relevant details.</p>
       <p><a href="https://github.com/AmirHabiby/movie_explorer_team_project.git" target="_blank" rel="noopener">View on GitHub</a></p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (API integration, dynamic content rendering)</li>
+      </ul>
     </article>
 
+    <!-- 2 -->
     <article id="restaurant-website">
-      <h2>2. Restaurant Website</h2>
-      <p>A frontend web development project built using <strong>HTML and CSS</strong>. The website presents a restaurant's information through different sections, including a homepage, food menu, image gallery, and contact information. It is designed to provide visitors with an organized and accessible way to explore the restaurant's offerings, view its atmosphere, and find contact details.</p>
+      <h2>Restaurant Website</h2>
+      <img src="images/restaurant.png" alt="Screenshot of the Restaurant website" width="400">
+      <p>A frontend web development project. The website presents a restaurant's information through different sections, including a homepage, food menu, image gallery, and contact information, giving visitors an organized way to explore the restaurant's offerings and find contact details.</p>
       <p><a href="https://github.com/helena0904/2h-restaurant.git" target="_blank" rel="noopener">View on GitHub</a></p>
 
-      <h3>Watch the project demo</h3>
+      <h3>Watch the demo</h3>
       <video controls style="width: 100%; max-width: 600px; height: auto;">
         <source src="media/project-demo.mp4" type="video/mp4">
-        <track src="media/project-demo.vtt"
-               kind="captions"
-               srclang="en"
-               label="English"
-               default>
+        <track src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default>
         Your browser does not support the video element.
       </video>
-<br>
- <details>
-  <summary>How I built it</summary>
-  <ol>
-    <li>Created the HTML pages for the restaurant.</li>
-    <li>Designed the home page.</li>
-    <li>Added the menu and gallery pages.</li>
-    <li>Styled the website using CSS.</li>
-  </ol>
-</details>     
+
+      <details>
+        <summary>How I built it</summary>
+        <ol>
+          <li>Created the HTML pages for the restaurant.</li>
+          <li>Designed the home page.</li>
+          <li>Added the menu and gallery pages.</li>
+          <li>Styled the website using CSS.</li>
+        </ol>
+      </details>
+
+      <h3>Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
     </article>
 
+    <!-- 3 -->
     <article id="asash-tour">
-      <h2>3. Asash Tour</h2>
-      <p>A tourism website developed using <strong>HTML and CSS</strong> to showcase Ethiopian travel destinations and tour services. The website introduces visitors to different places of interest in Ethiopia and presents available tourism experiences. It aims to promote Ethiopian tourism by providing information about destinations and making tour services more accessible through a simple and visually organized web interface.</p>
+      <h2>Asash Tour</h2>
+      <img src="images/asash-tour.png" alt="Screenshot of the Asash Tour website" width="400">
+      <p>A tourism website that showcases Ethiopian travel destinations and tour services. It introduces visitors to different places of interest in Ethiopia and presents available tourism experiences, making tour services more accessible through a simple, visually organized web interface.</p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
     </article>
 
+    <!-- 4 -->
     <article id="pc-management">
-      <h2>4. Digital PC Management System</h2>
-      <p>A team-based software development project built using <strong>C++ and MySQL</strong>. The system aims to digitalize the management and tracking of computer-related information and usage records. It provides a structured approach to storing, organizing, and managing PC information, reducing dependence on manual record-keeping and improving the efficiency of computer management.</p>
+      <h2>Digital PC Management System</h2>
+      <img src="images/pc-management.png" alt="Screenshot of the PC Management System" width="400">
+      <p>A team-based software development project that digitalizes the management and tracking of computer-related information and usage records. It provides a structured way to store, organize, and manage PC information, reducing manual record-keeping.</p>
       <p><a href="https://github.com/helena0904/pc-management.git" target="_blank" rel="noopener">View on GitHub</a></p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>C++</li>
+        <li>MySQL</li>
+      </ul>
     </article>
 
+    <!-- 5 -->
     <article id="cafeteria-system">
-      <h2>5. Digitalized Cafeteria System</h2>
-      <p>A team-based project developed using <strong>C++ and MySQL</strong> to improve cafeteria operations through digital record management. The system focuses on managing cafeteria information, organizing food-related records, and supporting food ordering and service processes. Its main goal is to reduce manual work, improve information management, and make cafeteria services more organized and efficient.</p>
+      <h2>Digitalized Cafeteria System</h2>
+      <img src="images/cafeteria.png" alt="Screenshot of the Cafeteria System" width="400">
+      <p>A team-based project that improves cafeteria operations through digital record management. It manages cafeteria information, organizes food-related records, and supports food ordering and service, with the goal of reducing manual work and making cafeteria services more efficient.</p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>C++</li>
+        <li>MySQL</li>
+      </ul>
     </article>
 
+    <!-- 6 -->
     <article id="mekakel">
-      <h2>6. MEKAKEL</h2>
-      <p>An individual full-stack web development project built using <strong>React, TypeScript, Node.js, PostgreSQL, and Tailwind CSS</strong>. MEKAKEL is a blood coordination platform designed to connect hospitals, clinics, and volunteer blood donors. It helps healthcare institutions coordinate blood requests, check available blood inventory, and identify compatible volunteer donors when additional blood is needed. The platform aims to simplify blood coordination and improve communication between healthcare institutions and donors, helping people find the blood they need more efficiently.</p>
+      <h2>MEKAKEL</h2>
+      <img src="images/mekakel.png" alt="Screenshot of the MEKAKEL platform" width="400">
+      <p>An individual full-stack project: a blood coordination platform that connects hospitals, clinics, and volunteer blood donors. It helps healthcare institutions coordinate blood requests, check available blood inventory, and identify compatible volunteer donors when more blood is needed.</p>
       <p><a href="https://github.com/helena0904/mekakel.git" target="_blank" rel="noopener">View on GitHub</a></p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Node.js</li>
+        <li>PostgreSQL</li>
+        <li>Tailwind CSS</li>
+      </ul>
     </article>
 
+    <!-- 7 -->
     <article id="mekenet">
-      <h2>7. Mekenet</h2>
-      <p>A mobile application developed using <strong>Flutter and Node.js</strong> to make selected digital services more accessible through smartphones. The application aims to simplify everyday tasks by providing users with a convenient mobile platform for accessing services digitally. It focuses on improving accessibility, reducing the need for manual processes, and creating a more convenient user experience.</p>
+      <h2>Mekenet</h2>
+      <img src="images/mekenet.png" alt="Screenshot of the Mekenet mobile app" width="400">
+      <p>A mobile application that makes selected digital services more accessible through smartphones. It simplifies everyday tasks, reduces the need for manual processes, and creates a more convenient user experience.</p>
       <p><a href="https://github.com/LuccianCross/MEKENET.git" target="_blank" rel="noopener">View on GitHub</a></p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>Flutter</li>
+        <li>Node.js</li>
+      </ul>
     </article>
 
   </main>
 
   <footer>
+    <p>Useful reference: <a href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank" rel="noopener">W3C &mdash; HTML standards</a></p>
+    <p><a href="index.html#contact">Contact me</a></p>
     <p>&copy; 2026 Helen Tesfaye. All rights reserved.</p>
-    <p>
-      <a href="#top">Back to top</a> |
-      <a href="index.html">Back to portfolio</a>
-    </p>
+    <p>Last updated: 3 November 2026</p>
+    <p><a href="#top">Back to top</a></p>
   </footer>
 
 </body>
