@@ -11,7 +11,31 @@
 
   <header id="top">
     <h1>Helen Tesfaye</h1>
+   
+</dialog>
     <img src="images/photo.jpg" alt="Profile photo of Helen Tesfaye" width="140" height="140">
+ <p>software developer aspiring ai/ml engineer</p>
+    <button type="button" onclick="document.getElementById('hireDialog').showModal()">
+  Hire me
+</button>
+
+<dialog id="hireDialog">
+  <h2>Available for internships</h2>
+
+  <p>
+    I am available for internships and freelance web projects from June 2027.
+  </p>
+
+  <p>
+    <a href="#contact">Send me a message</a>
+    or
+    <a href="files/cv.pdf" download>download my CV</a>.
+  </p>
+
+  <button type="button" onclick="document.getElementById('hireDialog').close()">
+    Close
+  </button>
+
     <p>Software Engineering student exploring backend development and AI/ML while building practical projects</p>
     <nav>
       <a href="#about">About</a> |
@@ -84,6 +108,13 @@
         </li>
       </ul>
 
+      <h3>Skill Levels</h3>
+       <p> HTML <meter min="0" max="100" value="80">80%</meter> 80% </p> 
+       <p> Python <meter min="0" max="100" value="70">70%</meter> 70%
+       </p> <p> JavaScript <meter min="0" max="100" low="30" high="70" optimum="90" value="20">20%
+       </meter> 20% </p> <p> CSS <meter min="0" max="100" value="40">40%</meter> 40% </p> 
+    </section>
+
       <h3>My Learning Roadmap</h3>
       <ol>
         <li>HTML structure and content</li>
@@ -149,7 +180,11 @@ int main() {
       <h2>Education</h2>
       <h3>BSc in Software Engineering</h3>
       <p>Addis Ababa Science and Technology University, 2024 &ndash; present</p>
-
+      <p>
+  Degree progress:
+  <progress value="40" max="100">40%</progress>
+  40%
+</p>
       <table border="1" cellpadding="6" cellspacing="0">
         <caption>Academic Record &mdash; BSc in Software Engineering</caption>
         <thead>
@@ -238,7 +273,7 @@ int main() {
     <area shape="rect" coords="420,40,580,160" href="mailto:helentesfaye9421@gmail.com" alt="Email">
   </map>
 
-  
+
 <h3>Where I study</h3>
 
 <iframe
