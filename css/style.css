@@ -22,14 +22,42 @@ main {
 }
 
 header {
+    background-image: url("../images/pattern.png"),
+        linear-gradient(135deg, #1f5fa8, #0b2d55);
+    color: white;
     text-align: center;
     padding: 2rem 1rem;
+}
+
+header h1 {
+    color: white;
+}
+
+header .tagline {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .btn {
+    background-color: hsl(37, 91%, 55%);
+    color: #22313f;
 }
 
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 3rem;
+    background-color: #22313f;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 h1,
@@ -184,6 +212,14 @@ video {
     height: auto;
 }
 
+.card img {
+    opacity: 0.85;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
 section,
 aside {
     margin: 2rem 0;
@@ -192,10 +228,18 @@ aside {
 
 aside {
     border-left: 6px solid #D9541E;
+    background-image: radial-gradient(circle at top left, #fff3dc, white 70%);
 }
 
 #contact {
-    background-color: rgba(217, 84, 30, 0.10);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.88),
+        rgba(255, 255, 255, 0.88)
+    ),
+    url("../images/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 20px;
     border-radius: 8px;
 }
@@ -308,4 +352,8 @@ tbody tr:nth-child(even) {
 
 main a[href$=".html"]::after {
     content: " →";
+}
+
+dialog::backdrop {
+    background-color: rgba(11, 45, 85, 0.6);
 }
