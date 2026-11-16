@@ -7,21 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Helen Tesfaye, a Software Engineering student exploring backend development, AI/ML, and practical projects.">
   <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header id="top">
     <canvas id="logo" width="120" height="120">
-    Helen Tesfaye logo
-</canvas>
+      Helen Tesfaye logo
+    </canvas>
+
     <h1>Helen Tesfaye</h1>
+
     <img src="images/photo.jpg" alt="Profile photo of Helen Tesfaye" width="140" height="140">
+
     <p>software developer aspiring ai/ml engineer</p>
 
-    <button type="button" onclick="document.getElementById('hireDialog').showModal()">
+    <button type="button" class="btn" onclick="document.getElementById('hireDialog').showModal()">
       Hire me
     </button>
 
@@ -40,7 +43,7 @@
       </button>
     </dialog>
 
-    <p>Software Engineering student exploring backend development and AI/ML while building practical projects</p>
+    <p class="tagline">Software Engineering student exploring backend development and AI/ML while building practical projects</p>
 
     <nav>
       <a href="#about">About</a> |
@@ -117,10 +120,10 @@
       <p>Python <meter min="0" max="100" value="70">70%</meter> 70%</p>
       <p>JavaScript <meter min="0" max="100" low="30" high="70" optimum="90" value="20">20%</meter> 20%</p>
       <p>CSS <meter min="0" max="100" value="40">40%</meter> 40%</p>
-    <canvas id="skillChart" width="300" height="150">
-    Skill levels bar chart
-</canvas>
-    
+
+      <canvas id="skillChart" width="300" height="150">
+        Skill levels bar chart
+      </canvas>
     </section>
 
     <h3>My Learning Roadmap</h3>
@@ -145,20 +148,20 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <article id="restaurant-project">
+      <article id="restaurant-project" class="card">
         <h3>Restaurant Website</h3>
         <p>A frontend website featuring a home page, menu, gallery, and contact section. Built with <strong>HTML and CSS</strong>.</p>
         <img src="images/restaurant.png" alt="restaurant website" width="600" height="200">
         <p><a href="https://github.com/helena0904/2h-restaurant.git" target="_blank" rel="noopener">View on GitHub</a></p>
       </article>
 
-      <article id="tour-project">
+      <article id="tour-project" class="card">
         <h3>Asash Tour</h3>
         <p>A tour agency website showcasing Ethiopian travel destinations and tour services. Built with <strong>HTML and CSS</strong>.</p>
         <img src="images/tour.png" alt="asash tour" width="600" height="200">
       </article>
 
-      <article id="first-program">
+      <article id="first-program" class="card">
         <h3>My First Program</h3>
         <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>. Later I wrote this loop:</p>
         <pre><code>for i in range(3):
@@ -329,7 +332,7 @@ int main() {
           <br><br>
 
           <label for="colour">Preferred website colour:</label>
-          <input type="color" id="colour" name="colour" value="#1f5fa8">
+          <input type="color" id="colour" name="colour" value="#D9541E">
           <br><br>
 
           <label for="rating">How much do you like my portfolio? (1–10)</label>
@@ -355,8 +358,8 @@ int main() {
         </fieldset>
 
         <br>
-        <button type="submit">Send Message</button>
-        <button type="reset">Clear</button>
+        <button type="submit" class="btn">Send Message</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
       </form>
     </section>
   </main>
@@ -370,6 +373,7 @@ int main() {
       <a href="mailto:helentesfaye9421@gmail.com">Email me</a>
     </p>
   </footer>
+
 <script>
     const canvas = document.getElementById("logo");
     const ctx = canvas.getContext("2d");
@@ -389,22 +393,22 @@ int main() {
     ctx.fillText("HT", 60, 60);
 
     const chart = document.getElementById("skillChart");
-const chartCtx = chart.getContext("2d");
+    const chartCtx = chart.getContext("2d");
 
-chartCtx.fillStyle = "blue";
+    chartCtx.fillStyle = "blue";
 
-chartCtx.fillRect(20, 34, 35, 96);
-chartCtx.fillRect(85, 46, 35, 84);
-chartCtx.fillRect(150, 106, 35, 24);
-chartCtx.fillRect(215, 82, 35, 48);
+    chartCtx.fillRect(20, 34, 35, 96);
+    chartCtx.fillRect(85, 46, 35, 84);
+    chartCtx.fillRect(150, 106, 35, 24);
+    chartCtx.fillRect(215, 82, 35, 48);
 
-chartCtx.fillStyle = "black";
-chartCtx.font = "12px Arial";
+    chartCtx.fillStyle = "black";
+    chartCtx.font = "12px Arial";
 
-chartCtx.fillText("HTML", 20, 145);
-chartCtx.fillText("Python", 85, 145);
-chartCtx.fillText("JS", 150, 145);
-chartCtx.fillText("CSS", 215, 145);
+    chartCtx.fillText("HTML", 20, 145);
+    chartCtx.fillText("Python", 85, 145);
+    chartCtx.fillText("JS", 150, 145);
+    chartCtx.fillText("CSS", 215, 145);
 </script>
 
 </body>

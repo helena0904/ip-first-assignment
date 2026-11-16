@@ -10,6 +10,13 @@ body {
     line-height: 1.6;
 }
 
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
 h1 {
     color: #D9541E;
     font-size: 2.5rem;
@@ -45,6 +52,17 @@ a:hover {
     text-decoration: underline;
 }
 
+nav a {
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: #D9541E;
+}
+
 blockquote {
     font-size: 1.2em;
     font-style: italic;
@@ -53,4 +71,53 @@ blockquote {
 code,
 pre {
     font-family: 'Courier New', monospace;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.75);
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: #D9541E;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.card {
+    background-color: #F3EEE3;
+    border: 1px solid rgba(217, 84, 30, 0.35);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background-color: rgba(217, 84, 30, 0.10);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card > p {
+    color: rgba(17, 17, 17, 0.75);
+}
+
+h2 + p {
+    font-size: 1.1rem;
+}
+
+legend ~ label {
+    font-weight: 600;
 }
