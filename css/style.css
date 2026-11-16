@@ -44,12 +44,24 @@ mark {
 }
 
 a {
-    color: #D9541E;
     text-decoration: none;
 }
 
+a:link {
+    color: #D9541E;
+}
+
+a:visited {
+    color: #111111;
+}
+
 a:hover {
+    color: #D9541E;
     text-decoration: underline;
+}
+
+a:active {
+    color: #111111;
 }
 
 nav a {
@@ -57,6 +69,11 @@ nav a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #111111;
 }
 
 nav a:hover {
@@ -96,12 +113,29 @@ pre {
     color: #FFFFFF;
 }
 
+.btn:hover {
+    background-color: #B84217;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+}
+
+[class*="btn"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .card {
     background-color: #F3EEE3;
     border: 1px solid rgba(217, 84, 30, 0.35);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.card:hover {
+    background-color: rgba(217, 84, 30, 0.10);
 }
 
 #contact {
@@ -118,6 +152,60 @@ h2 + p {
     font-size: 1.1rem;
 }
 
+h2 + p::first-line {
+    font-weight: 600;
+}
+
 legend ~ label {
     font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    border: 2px solid #D9541E;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px;
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+a[href^="https"]::after {
+    content: " ↗";
+}
+
+a[href^="mailto"]::before {
+    content: "✉ ";
+}
+
+a[href^="tel"]::before {
+    content: "☎ ";
+}
+
+a[download]::before {
+    content: "⬇ ";
+}
+
+h2::before {
+    content: "// ";
+    color: #D9541E;
+}
+
+ol li:first-child {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(217, 84, 30, 0.10);
+}
+
+main a[href$=".html"]::after {
+    content: " →";
 }
