@@ -1,34 +1,50 @@
 # Helen Tesfaye | Personal Portfolio
 
-A personal portfolio website built with plain HTML. It introduces me, my skills, education, projects and contact details.
+A personal portfolio website showcasing my background as a Software Engineering student, including my skills, education, projects, and contact information. The website is built using HTML, CSS, and JavaScript.
 
 ## Pages
 
-- `index.html` - main page (About, Skills, Projects, Education, Contact)
-- `projects.html` - all my projects with descriptions and GitHub links
+- `index.html` - Main portfolio page featuring About, Skills, Projects, Education, and Contact sections.
+- `projects.html` - Detailed descriptions of my projects, technologies used, and project links.
+- `thank-you.html` - Confirmation page displayed after submitting the contact form.
 
 ## Folder Structure
 
-```
+```text
 portfolio/
 ├── index.html
 ├── projects.html
-├── images/      (profile photo and images)
-├── files/       (CV and project demo videos)
+├── thank-you.html
+├── css/
+│   └── style.css
+├── images/
+│   └── Portfolio images and graphics
+├── files/
+│   └── CV and other documents
+├── media/
+│   └── Audio and video files
 └── README.md
 ```
 
 ## How to Run
 
-1. Download or clone this repository.
-2. Open `index.html` in any web browser.
+1. Clone or download this repository.
+2. Open the project folder.
+3. Open `index.html` in any modern web browser.
 
 ## Built With
 
-- HTML
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts (Poppins)
 
 ## Contact
 
-- Email: [helentesfaye@gmail.com](mailto:helentesfaye@gmail.com)
-- GitHub: [helena0904](https://github.com/helena0904)
-- LinkedIn: [Helen Tesfaye](https://www.linkedin.com/in/helen-tesfaye-45b02742a/)
+- **Email:** helentesfaye9421@gmail.com
+- **GitHub:** [helena0904](https://github.com/helena0904)
+- **LinkedIn:** [Helen Tesfaye](https://www.linkedin.com/in/helen-tesfaye-45b02742a/)
+
+---
+
+© 2026 Helen Tesfaye. All rights reserved.
