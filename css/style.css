@@ -1,0 +1,56 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #F3EEE3;
+    color: #111111;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #D9541E;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: rgb(217, 84, 30);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: hsl(15, 76%, 48%);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+mark {
+    background-color: rgba(217, 84, 30, 0.25);
+}
+
+a {
+    color: #D9541E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+code,
+pre {
+    font-family: 'Courier New', monospace;
+}
